@@ -21,7 +21,7 @@ echo "
 -----------------------------------------------------------------------------------------------------
 the package 'libglib2.0-dev' is not installed.Hence installing it
 -----------------------------------------------------------------------------------------------------"
-sudo apt install libglib2.0-dev -y
+sudo apt-get install libglib2.0-dev -y > temp
 fi
 
 ############################################################################################
@@ -213,7 +213,7 @@ update-alternatives --quiet --set gdm3-theme.gresource "$source"
 cd /usr/local/share
 rmdir --ignore-fail-on-non-empty -p gnome-shell/theme
 echo "
-				    ---------------
+					        ---------------
 						|Reset Success|
 						---------------"
 else
