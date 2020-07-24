@@ -34,7 +34,7 @@ echo "Exiting..."
 exit 1
 fi
 sed -i 's/quiet splash//g' /etc/default/grub
-sudo apt autoremove plymouth-theme-ubuntu-text -y > temp
+sudo apt-get autoremove plymouth-theme-ubuntu-text -y > temp
 sudo update-grub2 > temp
 echo "Splash screen removed reboot to see changes"
 echo "Do you want to reboot now? [y/n] .."
@@ -53,7 +53,7 @@ echo "
 resetting back to defaults..
 "
 sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=""/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/g' /etc/default/grub
-sudo apt install plymouth-theme-ubuntu-text > temp
+sudo apt-get install plymouth-theme-ubuntu-text > temp
 sudo update-grub2 > temp
 echo "
 				---------------
