@@ -82,10 +82,10 @@ echo "
 Enter Hex Color Code for Login Screen (you may note down colors of your choice from this link https://www.color-hex.com/)
 -------------------------------------------------------------------------------------------------------------------------
 Example1: #000000
-Example2: #2525FF
-Example3: #456789
-Example4: #123
-Example5: #FF00FF
+Example2: #252525
+Example3: #123456
+Example4: #AAAAAA
+Example5: #AC7A8A
 -------------------------------------------------------------------------------------------------------------------------"
 read c
 fi
