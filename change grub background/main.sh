@@ -6,7 +6,7 @@ echo "This script must be run with sudo priveleges"
 exit 1
 fi
 
-
+touch grubimage.log
 case "$1" in --set)
 echo "
 please note that we are now going to set the grub screen 
@@ -29,9 +29,9 @@ Example 2 : ~Pictures/grub.png
 "
 
 read path
-echo "GRUB_BACKGROUND="$path"" >> /etc/default/grub >> grubimage.log
+echo "GRUB_BACKGROUND="$path"" >> /etc/default/grub
 
-update-grub >> grubimage.log
+sudo update-grub > grubimage.log
 
 echo "
 			       ===============
@@ -48,14 +48,16 @@ please note that we are now going to reset the grub screen
 Do you want to proceed? [y/n] Type n to exit, or press enter to proceed.
 "
 read answer
-if [ "$answer"=="n" ] || [ "$answer"=="N" ]
+
+if [ "$answer" == "n" ] || [ "$answer" == "N" ]
 then
-echo "ok Exitting.."
+echo "Exiting..."
 exit 1
 fi
 
+
 sed 's/GRUB_BACKGROUND/#GRUB_BACKGROUND/' /etc/default/grub >> grubimage.log
-update-grub >> grubimage.log
+sudo update-grub > grubimage.log
 echo "
                                =====================
                                |                   |
