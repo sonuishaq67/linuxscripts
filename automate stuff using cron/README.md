@@ -1,5 +1,5 @@
 install mailutils
-```sudo apt install mailutils```
+```sudo apt install ssmtp```
 edit the file
 ```sudo vim /etc/ssmtp/ssmtp.conf```
 with credentials in the below format
@@ -15,8 +15,8 @@ UseSTARTTLS=YES
 UseTLS=YES
 mailhub=smtp.gmail.com:587 # for gmail
 ```
-edit crontab file using crontab -e//executes every hour at 00 minutes eg 4:00 5:00
+edit crontab file using crontab -e //executes after every 30 seconds your machine is turned on  
 ```
-00 * * * * /path/to/mail.sh  
+@reboot (sleep 30 && /path/to/mail.sh)
 ```
 
