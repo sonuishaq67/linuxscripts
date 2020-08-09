@@ -1,5 +1,5 @@
 # focal splash screen removal
-
+## Safe to use
 ### chomd +x splash.sh
 ### sudo ./splash.sh --remove to remove splash screen
 ![issa screenshot 1](assets/image.png)

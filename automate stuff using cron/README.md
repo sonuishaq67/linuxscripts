@@ -1,3 +1,5 @@
+## safe to use 
+
 install mailutils
 ```sudo apt install ssmtp```
 edit the file
