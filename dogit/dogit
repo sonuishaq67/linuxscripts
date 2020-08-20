@@ -1,7 +1,6 @@
 #!/bin/bash
 git add .
-echo "give message"
-read answer
+read -p "Enter the message : " answer
 git commit -m "$answer"
 git pull --rebase
 git push -u origin master
