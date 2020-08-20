@@ -2,5 +2,7 @@
 git add .
 read -p "Enter the message : " answer
 git commit -m "$answer"
+read -p "Enter branch default [master]: " branch
+branch=${branch:-master}
 git pull --rebase
-git push -u origin master
+git push -u origin $branch
