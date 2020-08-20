@@ -1,0 +1,7 @@
+#!/bin/bash
+git add .
+echo "give message"
+read answer
+git commit -m "$answer"
+git pull --rebase
+git push -u origin master
