@@ -1,0 +1,7 @@
+#!/bin/bash
+FILE=$(pwd)/.numbers.dat
+if [ ! -f "$FILE" ]; then
+    echo "$(tput bold)The script main.sh should be used at least once in order to use this command"
+else
+echo -e "\n\n\t\tThe average ram usage is $(grep avg .numbers.dat | cut -c5-)\n\n"
+fi

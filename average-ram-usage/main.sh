@@ -12,7 +12,3 @@ avg=$(/usr/bin/expr $avg - 6)
 sed -i "/x/c\x=$x" .numbers.dat
 sed -i "/y/c\y=$y" .numbers.dat
 sed -i "/avg/c\avg=$avg" .numbers.dat
-
-ravg() {
-	echo -e "\n\n\t\tThe average ram usage is $(grep avg .numbers.dat | cut -c5-)\n\n"
-}
