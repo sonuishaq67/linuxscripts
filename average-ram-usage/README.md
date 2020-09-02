@@ -6,3 +6,9 @@ execute ./first.sh
 
 ### to display the average ram
 and type ```ravg```
+
+### Preview
+![](assets/1.png)
+
+
+![](assets/2.png)
