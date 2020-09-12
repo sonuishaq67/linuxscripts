@@ -32,7 +32,7 @@ exit 1
 fi
 sed -i 's/quiet splash//g' /etc/default/grub
 sudo apt-get autoremove plymouth-theme-ubuntu-text -y > temp
-sudo update-grub2 > temp
+sudo update-grub2 &> temp
 echo "Splash screen removed reboot to see changes"
 echo "Do you want to reboot now? [y/n] .."
 read lmao
