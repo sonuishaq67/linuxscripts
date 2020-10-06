@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/sonuishaq67/linuxscripts">
-    <img src="Image/logo-readme.png" alt="Logo" width="80" height="80">
+    <img src="assets/logo-readme.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">LinuxScripts</h3>
 </p>
@@ -18,7 +18,7 @@
 ## Table of Contents
 
 - [Linux Scripts](#linux-scripts)
-    - [Built With](#built-with)
+  - [Built With](#built-with)
   - [Getting Started](#getting-started)
     - [Installation](#installation)
   - [Usage](#usage)
