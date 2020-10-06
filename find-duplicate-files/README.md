@@ -8,4 +8,4 @@ Since it uses contents of file instead of its name, it is able to find duplicate
 - python3 FindDuplicateFilesInDir.py
 - ./FindDuplicateFilesInDir.py
 
-#### *Note* : Enter full path specific to the OS you are running for example, in Windows-> C:\Users\Xyz\Documents , in Linux-> /home/Xyz/Documents
+#### Enter full path specific to the OS you are running for example, in Windows-> C:\Users\Xyz\Documents , in Linux-> /home/Xyz/Documents
