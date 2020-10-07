@@ -18,7 +18,7 @@
 ## Table of Contents
 
 - [Linux Scripts](#linux-scripts)
-    - [Built With](#built-with)
+  - [Built With](#built-with)
   - [Getting Started](#getting-started)
     - [Installation](#installation)
   - [Usage](#usage)
