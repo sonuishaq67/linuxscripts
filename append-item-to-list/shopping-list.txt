@@ -1,0 +1,11 @@
+bread
+eggs
+milk
+cheese
+thyme
+basil
+yoghurt
+fish
+crab
+sausage
+butter
