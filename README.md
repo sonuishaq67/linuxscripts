@@ -104,13 +104,8 @@ See the [open issues](https://github.com/sonuishaq67/linuxscripts) for a list of
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+See [Contributing Guidelines](https://github.com/sonuishaq67/linuxscripts/blob/master/CONTRIBUTING.md)
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 <!-- LICENSE -->
 
@@ -118,7 +113,7 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- Here you can add license link  -->
 
-Distributed under the License. See [`LICENSE`](https://choosealicense.com/licenses/mit/) for more information.
+Distributed under the License. See [`LICENSE`](https://github.com/sonuishaq67/linuxscripts/blob/master/LICENSE) for more information.
 
 <!-- CONTACT -->
 
