@@ -1,0 +1,1 @@
+## script to update bot with new version on server from git 
