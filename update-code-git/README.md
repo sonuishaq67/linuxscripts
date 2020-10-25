@@ -1,1 +1,1 @@
-## script to update bot with new version on server from git 
+## This is a script that'll check for the new updates of the [discord bot](https://github.com/sonuishaq67/42ipdiscordbot) and update it automatically . For more info regarding the bot click [here](https://github.com/sonuishaq67/42ipdiscordbot)

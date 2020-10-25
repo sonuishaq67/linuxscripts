@@ -1,7 +1,17 @@
-# focal boot screen change
+# Focal boot screen change
 ## Safe to use
-### chomd +x focal.sh
-### sudo ./focal.sh --set to set a wallpaper
+```sh
+chmod +x focal.sh
+```
+### #to set a wallpaper
+```sh
+ sudo ./focal.sh --set 
+ ```
 ![issa screenshot 1](assets/image.png)
-### sudo ./focal.sh --reset to revert back to default 
+
+#### to revert back to default 
+```sh
+ sudo ./focal.sh --reset 
+ ```
+
 ![isa screenshot 2](assets/image1.png)
