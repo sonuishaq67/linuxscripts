@@ -1,7 +1,16 @@
 # focal splash screen removal
 ## Safe to use
-### chomd +x splash.sh
-### sudo ./splash.sh --remove to remove splash screen
+```sh
+chmod +x splash.sh
+```
+### To remove splash screen
+```sh
+sudo ./splash.sh --remove 
+```
+
 ![issa screenshot 1](assets/image.png)
-### sudo ./splash.sh --reset to revert back to default 
+### To revert back to default 
+```sh
+sudo ./splash.sh --reset 
+```
 ![issa screenshot 2](assets/image1.png)
