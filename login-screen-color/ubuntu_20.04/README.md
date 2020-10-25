@@ -3,13 +3,13 @@
 ```sh
 chmod +x focal.sh
 ```
-### #to set a wallpaper
+#### To set a wallpaper
 ```sh
  sudo ./focal.sh --set 
  ```
 ![issa screenshot 1](assets/image.png)
 
-#### to revert back to default 
+#### To revert back to default 
 ```sh
  sudo ./focal.sh --reset 
  ```
