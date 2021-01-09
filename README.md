@@ -128,7 +128,7 @@ Project Link: [https://github.com/sonuishaq67/linuxscripts](https://github.com/s
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 
-<!-- MARKDOWN LINKS & IMAGES -->
+<!-- MD LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/sonuishaq67/linuxscripts.svg?style=flat
