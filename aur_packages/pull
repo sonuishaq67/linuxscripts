@@ -1,14 +1,32 @@
 #!/usr/bin/python
 
 import os
-import time
-import subprocess
+
+def check_if_string_in_file(file_name, string_to_search):
+    with open(file_name, 'r') as read_obj:
+        for line in read_obj:
+            if string_to_search in line:
+                return True
+    return False
 
 ls = os.listdir(".")
 for x in ls:
     if os.path.isdir(x):
         os.chdir(x)
-        subprocess.call(["git", "pull"])
+        path = os.getcwd()
+        curdir = path.split("/")
+        print(str(curdir[-1]), "is")
+        os.system("git pull > lmao 2>&1 ")
+        os.system("cat lmao")
+        if check_if_string_in_file("lmao","Updating"):
+            if check_if_string_in_file("lmao","stash"):
+                print("Stashing") 
+                os.system("git stash")
+                os.system("git pull")
+            else:
+                prompt=input(f"Do you want to install ${str(curdir[-1])} package ?? : ")
+                if prompt == 'y' or 'Y':
+                    os.system("makepkg -si")
+        os.system("rm lmao")
         os.chdir("..")
-    else:
-        print("is file ", x)
+
