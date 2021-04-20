@@ -1,32 +1,47 @@
 #!/usr/bin/python
 
 import os
+import threading
 
 def check_if_string_in_file(file_name, string_to_search):
-    with open(file_name, 'r') as read_obj:
+    with open(file_name, "r") as read_obj:
         for line in read_obj:
             if string_to_search in line:
                 return True
     return False
 
+
 ls = os.listdir(".")
+updateddirs = []
 for x in ls:
     if os.path.isdir(x):
         os.chdir(x)
         path = os.getcwd()
         curdir = path.split("/")
-        print(str(curdir[-1]), "is")
         os.system("git pull > lmao 2>&1 ")
-        os.system("cat lmao")
-        if check_if_string_in_file("lmao","Updating"):
-            if check_if_string_in_file("lmao","stash"):
-                print("Stashing") 
+        os.system(f"echo -n '{curdir[-1]} is ' && cat lmao")
+        if check_if_string_in_file("lmao", "Updating"):
+            if check_if_string_in_file("lmao", "stash"):
                 os.system("git stash")
-                os.system("git pull")
-            else:
-                prompt=input(f"Do you want to install ${str(curdir[-1])} package ?? : ")
-                if prompt == 'y' or 'Y':
-                    os.system("makepkg -si")
+                os.system("git pull >> lmao 2>&1")
+            updateddirs.append(path)
         os.system("rm lmao")
         os.chdir("..")
 
+
+def updatepkg(each):
+    print(f"making {each}")
+    os.system(f"cd {each} && yes y | makepkg -si && cd ..")
+
+os.system("sudo pacman -Qi python > onti && rm onti")
+if len(updateddirs)==0:
+    print("Everything is upto date")
+    exit(0)
+for each in updateddirs:
+    try:
+        print("starting new thread for {}".format(each))
+        x = threading.Thread(target=updatepkg, args=(each,))
+        x.start()
+        print(f"done {each}")
+    except BaseException as e:
+        print(e)

@@ -5,7 +5,7 @@ import shutil
 import glob
 
 ls = os.listdir(".")
-files = ["*.deb", "*.tar.*", "*.rpm", "*.snap", "*.zip"]
+files = ["*.deb", "*.tar*", "*.rpm", "*.snap", "*.zip","*.AppImage"]
 
 for x in ls:
     if os.path.isdir(x):
